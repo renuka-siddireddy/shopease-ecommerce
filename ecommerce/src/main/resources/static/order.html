@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Your Orders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <h2>ShopEase</h2>
+    <div>
+        <a href="products.html">Home</a>
+        <a href="cart.html">Cart</a>
+        <a href="order.html">Orders</a>
+        <a href="profile.html">Profile</a>
+    </div>
+</header>
+
+
+<div class="orders-container">
+    <h1>Your Orders</h1>
+
+    <table class="orders-table">
+        <thead>
+        <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Qty</th>
+            <th>Delivery Date</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+
+        <tbody id="ordersBody"></tbody>
+    </table>
+</div>
+
+<script src="order.js"></script>
+</body>
+</html>

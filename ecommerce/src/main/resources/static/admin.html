@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<h2>Admin Dashboard</h2>
+
+<!-- ADD PRODUCT FORM (UNCHANGED) -->
+<input id="name" placeholder="Product Name">
+<input id="price" type="number" placeholder="Price (₹)">
+<input id="stock" type="number" placeholder="Stock">
+<textarea id="description" placeholder="Product description"></textarea>
+
+<input id="category" placeholder="Category">
+<input id="image" placeholder="Image URL">
+
+<button onclick="addProduct()">Add Product</button>
+
+<hr>
+
+<h3>All Products</h3>
+
+<table border="1" width="100%">
+    <thead>
+    <tr>
+        <th>Image</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Stock</th>
+        <th>Category</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody id="productsTableBody"></tbody>
+</table>
+
+<script src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: black;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+</style>
+<body>
+
+<header class="navbar">
+    <h2>ShopEase</h2>
+    <div>
+        <a href="products.html">Home</a>
+        <a href="cart.html">Cart</a>
+        <a href="order.html">Orders</a>
+        <a href="index.html">Sign Out</a>
+    </div>
+</header>
+<div class="profile-container">
+
+    <!-- Avatar -->
+    <div id="avatar" class="avatar"></div>
+
+    <p><b>Name:</b> <span id="viewName"></span></p>
+    <p><b>Email:</b> <span id="viewEmail"></span></p>
+    <p><b>Phone:</b> <span id="viewPhone"></span></p>
+    <p><b>Address:</b> <span id="viewAddress"></span></p>
+
+    <button onclick="enableEdit()">Edit Profile</button>
+
+    <!-- Edit Mode -->
+    <div id="editSection" style="display:none;">
+        <input id="name" placeholder="Name">
+        <input id="email" placeholder="Email" disabled>
+        <input id="phone" placeholder="Phone">
+        <textarea id="address" placeholder="Address"></textarea>
+        <button onclick="updateProfile()">Save</button>
+    </div>
+
+</div>
+
+
+
+<script src="profile.js"></script>
+</body>
+</html>

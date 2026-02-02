@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Cart | ShopEase</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+<header class="navbar">
+    <h2>ShopEase</h2>
+    <div>
+        <a href="products.html">Home</a>
+        <a href="cart.html">Cart</a>
+        <a href="order.html">Orders</a>
+        <a href="profile.html">Profile</a>
+    </div>
+</header>
+
+<main class="cart-container">
+    <h1>Your Shopping Cart</h1>
+
+    <div id="cartItems" class="cart-items">
+        <!-- Cart cards will be inserted here dynamically -->
+    </div>
+
+    <div class="cart-footer">
+        <h2 id="grandTotal">Total: ₹0</h2>
+        <button class="place-order-btn" onclick="placeOrder()">Place Order</button>
+    </div>
+</main>
+
+<script src="cart.js"></script>
+</body>
+</html>

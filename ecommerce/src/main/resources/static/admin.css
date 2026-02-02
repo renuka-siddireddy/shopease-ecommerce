@@ -1,0 +1,47 @@
+body {
+    font-family: Arial;
+    background: #f8f9fa;
+    padding: 20px;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+.form-box {
+    display: grid;
+    gap: 10px;
+    max-width: 500px;
+    margin: auto;
+}
+
+input, textarea {
+    padding: 8px;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}

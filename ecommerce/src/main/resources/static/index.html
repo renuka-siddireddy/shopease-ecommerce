@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ShopEase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">ShopEase</div>
+
+    <input
+            type="text"
+            placeholder="Search products..."
+            class="search-box"
+            onclick="requireLogin()"
+            onkeydown="requireLogin()"
+    >
+
+    <div class="nav-actions">
+        <button onclick="location.href='login.html'">Login</button>
+        <button onclick="location.href='register.html'">Register</button>
+    </div>
+</header>
+
+<!-- HERO BANNER -->
+<section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1>Find Everything You Love</h1>
+        <p>Shop the latest products at unbeatable prices</p>
+        <button onclick="location.href='login.html'">Shop Now</button>
+    </div>
+</section>
+
+<!-- TODAY DEALS -->
+<section class="scroll-section">
+    <h2>Today’s Deals</h2>
+
+    <div class="scroll-container">
+        <img src="https://m.media-amazon.com/images/I/71qid7QFWJL._SX3000_.jpg">
+        <img src="https://m.media-amazon.com/images/I/61lwJy4B8PL._SX3000_.jpg">
+        <img src="https://m.media-amazon.com/images/I/81KkrQWEHIL._SX3000_.jpg">
+        <img src="https://m.media-amazon.com/images/I/71Ie3JXGfVL._SX3000_.jpg">
+    </div>
+</section>
+
+<!-- SHOP BY CATEGORY -->
+<section class="scroll-section">
+    <h2>Shop by Category</h2>
+
+    <div class="scroll-container">
+        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8">
+        <img src="https://images.unsplash.com/photo-1521334884684-d80222895322">
+        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc">
+        <img src="shopping11.webp">
+        <img src="s2.jpeg">
+    </div>
+</section>
+
+<footer>
+    © 2025 ShopEase | All Rights Reserved
+</footer>
+
+<!-- LOGIN ENFORCEMENT SCRIPT -->
+<script>
+    function requireLogin() {
+        alert("Please login to continue your shopping 🛒");
+        window.location.href = "login.html";
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ShopEase - Home</title>
+    <link rel="stylesheet" href="products.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <h2 class="logo">ShopEase</h2>
+
+    <input
+            type="text"
+            id="searchInput"
+            placeholder="Search products..."
+            onkeyup="searchProducts()"
+            class="search-bar"
+    >
+
+    <div class="nav-links">
+        <a href="products.html"><b>Home</b></a>
+        <a href="cart.html" id="cartCount"><b>Cart</b></a>
+        <a href="order.html"><b>Orders</b></a>
+        <a href="profile.html"><b>Profile</b></a>
+    </div>
+</header>
+
+<!-- HERO CAROUSEL -->
+<section class="hero-carousel">
+    <div class="slide">
+        <img src="makup.jpg" alt="Makeup">
+    </div>
+    <div class="slide">
+        <img src="watches.jpg" alt="Watches">
+    </div>
+    <div class="slide">
+        <img src="gadgets.webp" alt="Gadgets">
+    </div>
+</section>
+
+<!-- PRODUCTS LIST -->
+<section class="products" id="product-list"></section>
+
+<footer class="footer">
+    © 2025 ShopEase | India
+</footer>
+
+<script src="products.js"></script>
+</body>
+</html>

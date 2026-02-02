@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login | ShopEase</title>
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body class="auth-body">
+
+<div class="auth-box">
+    <h2>Sign in</h2>
+
+    <input id="email" type="email" placeholder="Email address">
+    <input id="password" type="password" placeholder="Password">
+
+    <button onclick="login()">Login</button>
+
+    <p class="auth-link">
+        New to ShopEase?
+        <a href="register.html">Create your account</a>
+    </p>
+</div>
+
+<script>
+    function login() {
+  fetch("http://localhost:8080/auth/login", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+        email: email.value,
+        password: password.value
+    })
+})
+.then(res => {
+    if (!res.ok) return res.text().then(msg => { throw msg });
+    return res.json();
+})
+.then(user => {
+    localStorage.setItem("userId", user.id);
+    localStorage.setItem("role", user.role);
+
+    if (user.role === "ADMIN") {
+        window.location.href = "admin.html";
+    } else {
+        window.location.href = "products.html";
+    }
+})
+.catch(err => alert(err));
+
+
+    }
+</script>
+
+
+
+
+</body>
+</html>
