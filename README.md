@@ -65,16 +65,16 @@ It includes user authentication, product browsing, cart management, order placem
 
 ```md
 ### 🏠 Home Page
-![Home Page](screenshots/home_page.png)
+![Home Page](home_page.png)
 
 ### 🛍 Products Page
-![Products Page](screenshots/products_page.png)
+![Products Page](products_page.png)
 
 ### 🛒 Cart Page
-![Cart Page](screenshots/cart_page.png)
+![Cart Page](cart_page.png)
 
 ### Login Page
-![Profile Page](screenshots/login_page.png)
+![Login Page](login_page.png)
 
 ### 📦 Orders Page
-![Orders Page](screenshots/orders_page.png)
+![Orders Page](orders_page.png)
