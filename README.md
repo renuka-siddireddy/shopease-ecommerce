@@ -1,53 +1,80 @@
-# ShopEase – E-commerce Web Application 🛒
+# 🛒 ShopEase – Full Stack E-Commerce Web Application
 
 ShopEase is a full-stack e-commerce web application designed to provide a smooth online shopping experience.  
-It supports user authentication, product browsing, cart management, order placement, and profile management.
+It includes user authentication, product browsing, cart management, order placement, and profile management with a clean and modern UI.
 
-## 🚀 Features
+## ✨ Features
 
 ### 👤 User Module
 - User Registration & Login
-- View and Edit Profile
-- Gmail-style Avatar (First letter of username)
-- Search Products
-- Add to Cart & Remove from Cart
-- Place Orders
-- View Order History
-- Cancel Orders (before delivery)
+- Profile View & Edit (Name, Phone, Address)
+- Gmail-style avatar using first letter of username
+- Secure session handling using Local Storage
 
-### 🛠️ Admin Module
-- Add New Products
-- Update Product Details
-- Delete Products
-- Manage Inventory
+### 🛍 Product Module
+- View all products
+- Product details page
+- Search products from navbar
+- Default image handling for missing images
+
+### 🛒 Cart Module
+- Add products to cart
+- Update quantity
+- Remove items from cart
+- View total price
+- Place order from cart
+
+### 📦 Order Module
+- Place orders from cart
+- View order history
+- Order date & delivery date tracking
+- Cancel order (before delivery)
+
+### 🧑‍💼 Admin Module
+- Add new products
+- Manage product details
+- Backend product control using Spring Boot
+
+---
 
 ## 🧰 Tech Stack
+
+### Frontend
+- HTML5
+- CSS3
+- JavaScript (Vanilla JS)
 
 ### Backend
 - Java
 - Spring Boot
 - REST APIs
+
+### Database
 - MySQL
-- JPA / Hibernate
 
-### Frontend
-- HTML
-- CSS
-- JavaScript
+### Tools & Platforms
+- Git & GitHub
+- GitHub Pages (Frontend Hosting)
+- Postman (API Testing)
 
+---
 
-## 🗄️ Database
-- MySQL  
-- Tables: Users, Products, Cart, CartItems, Orders
+## 📸 Screenshots
 
+> Screenshots will be added here
 
+```md
+### 🏠 Home Page
+![Home Page](screenshots/index.png)
 
+### 🛍 Products Page
+![Products Page](screenshots/products.png)
 
+### 🛒 Cart Page
+![Cart Page](screenshots/cart.png)
 
-## ⚙️ How to Run Locally
+### 👤 Profile Page
+![Profile Page](screenshots/profile.png)
 
-### Backend
-1. Clone the repository
-   ```bash
-   git clone https://github.com/renuka-siddireddy/shopease-ecommerce.git
-p
+### 📦 Orders Page
+![Orders Page](screenshots/orders.png)
